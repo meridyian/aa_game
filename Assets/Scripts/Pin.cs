@@ -26,11 +26,15 @@ public class Pin : MonoBehaviour
     {
         if(col.tag == "Rotator")
         {
-            Debug.Log("pin");
-            //stop forward movement and stick
-            isPinned = true;
-            transform.SetParent(col.transform);
             //parent it to rotator
+            //stop forward movement and stick
+
+            Debug.Log("pin");
+            transform.SetParent(col.transform);
+            isPinned = true;
+        } else if (col.tag == "Pin")
+        {
+            
         }
     }
 }
