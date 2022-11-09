@@ -318,6 +318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87397bb1bc1dc48dd983353be4006a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotator: {fileID: 1927347383}
+  spawner: {fileID: 79314965}
 --- !u!1 &1927347380
 GameObject:
   m_ObjectHideFlags: 0

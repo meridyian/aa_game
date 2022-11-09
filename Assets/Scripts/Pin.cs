@@ -29,12 +29,11 @@ public class Pin : MonoBehaviour
             //parent it to rotator
             //stop forward movement and stick
 
-            Debug.Log("pin");
             transform.SetParent(col.transform);
             isPinned = true;
         } else if (col.tag == "Pin")
         {
-            
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }
