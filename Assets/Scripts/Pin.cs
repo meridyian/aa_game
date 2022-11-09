@@ -20,11 +20,13 @@ public class Pin : MonoBehaviour
 
     }
 
+
     //hit the rotator and parent it
     private void OnTriggerEnter2D(Collider2D col)
     {
         if(col.tag == "Rotator")
         {
+            Debug.Log("pin");
             //stop forward movement and stick
             isPinned = true;
             transform.SetParent(col.transform);
