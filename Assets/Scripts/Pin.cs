@@ -27,6 +27,8 @@ public class Pin : MonoBehaviour
         {
             //stop forward movement and stick
             isPinned = true;
+            transform.SetParent(col.transform);
+            //parent it to rotator
         }
     }
 }
