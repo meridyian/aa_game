@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public Rotator rotator;
     public Spawner spawner;
 
+    public Animator animator;
+
     public void EndGame()
     {
         if (gameHasEnded)
@@ -17,6 +19,8 @@ public class GameManager : MonoBehaviour
 
         rotator.enabled = false;
         spawner.enabled = false;
+
+        animator.SetTrigger("End GAME");
 
         gameHasEnded = true;
         
