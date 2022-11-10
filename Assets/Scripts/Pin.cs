@@ -31,6 +31,7 @@ public class Pin : MonoBehaviour
 
             transform.SetParent(col.transform);
             isPinned = true;
+            Score.PinCount++;
         } else if (col.tag == "Pin")
         {
             FindObjectOfType<GameManager>().EndGame();
