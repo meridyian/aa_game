@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         rotator.enabled = false;
         spawner.enabled = false;
 
-        animator.SetTrigger("End GAME");
+        animator.SetTrigger("End Game");
 
         gameHasEnded = true;
         
