@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
     //just want to do for once
     private bool gameHasEnded = false;
 
@@ -24,5 +26,10 @@ public class GameManager : MonoBehaviour
 
         gameHasEnded = true;
         
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
