@@ -5,10 +5,12 @@ using UnityEngine;
 public class Pin : MonoBehaviour
 {
     private bool isPinned = false;
+    public static int currentScore;
 
     public float speed = 20f;
     public Rigidbody2D rb;
 
+    
     void Update()
     {
         //move if is not pinned 
@@ -32,8 +34,10 @@ public class Pin : MonoBehaviour
             transform.SetParent(col.transform);
             isPinned = true;
             Score.PinCount++;
+
         } else if (col.tag == "Pin")
         {
+
             FindObjectOfType<GameManager>().EndGame();
         }
     }
